@@ -1,0 +1,76 @@
+digraph Dependencies {
+	info [label=info]
+	time -> info
+	author [label=author]
+	"	info" -> author
+	author_email [label=author_email]
+	"	info" -> author_email
+	bugtrack_url [label=bugtrack_url]
+	"	info" -> bugtrack_url
+	classifiers [label=classifiers]
+	"	info" -> classifiers
+	description [label=description]
+	"	info" -> description
+	description_content_type [label=description_content_type]
+	"	info" -> description_content_type
+	docs_url [label=docs_url]
+	"	info" -> docs_url
+	download_url [label=download_url]
+	"	info" -> download_url
+	downloads [label=downloads]
+	"	info" -> downloads
+	last_day [label=last_day]
+	"		downloads" -> last_day
+	last_month [label=last_month]
+	"		downloads" -> last_month
+	last_week [label=last_week]
+	"		downloads" -> last_week
+	home_page [label=home_page]
+	"	info" -> home_page
+	keywords [label=keywords]
+	"	info" -> keywords
+	license [label=license]
+	"	info" -> license
+	maintainer [label=maintainer]
+	"	info" -> maintainer
+	maintainer_email [label=maintainer_email]
+	"	info" -> maintainer_email
+	name [label=name]
+	"	info" -> name
+	package_url [label=package_url]
+	"	info" -> package_url
+	platform [label=platform]
+	"	info" -> platform
+	project_url [label=project_url]
+	"	info" -> project_url
+	project_urls [label=project_urls]
+	"	info" -> project_urls
+	Download [label=Download]
+	"		project_urls" -> Download
+	Homepage [label=Homepage]
+	"		project_urls" -> Homepage
+	release_url [label=release_url]
+	"	info" -> release_url
+	requires_dist [label=requires_dist]
+	"	info" -> requires_dist
+	requires_python [label=requires_python]
+	"	info" -> requires_python
+	summary [label=summary]
+	"	info" -> summary
+	version [label=version]
+	"	info" -> version
+	yanked [label=yanked]
+	"	info" -> yanked
+	yanked_reason [label=yanked_reason]
+	"	info" -> yanked_reason
+	last_serial [label=last_serial]
+	time -> last_serial
+	releases [label=releases]
+	time -> releases
+	"1.0.0" [label="1.0.0"]
+	"	releases" -> "1.0.0"
+	urls [label=urls]
+	time -> urls
+	vulnerabilities [label=vulnerabilities]
+	time -> vulnerabilities
+}
