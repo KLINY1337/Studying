@@ -1,0 +1,67 @@
+fieldset {
+  display: inline-block;
+  font-family: Montserrat;
+  border: 3px solid #0006a4;
+  border-radius: 15px;
+  width: 400px;
+}
+
+fieldset legend {
+  border: 3px solid #0006a4;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+fieldset input {
+  width: 360px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+fieldset select {
+  width: 368px;
+  margin: 0 auto;
+  height: 20px;
+}
+
+fieldset div {
+  margin-left: 3%;
+  margin-top: 4%;
+}
+fieldset button {
+  font-family: Montserrat;
+  font-size: 16px;
+  width: 368px;
+  height: 24px;
+  margin: 1% auto;
+}
+
+select option {
+  font-family: Montserrat;
+  height: 20px;
+  font-size: 18px;
+}
+
+fieldset label {
+  font-family: Montserrat;
+  font-size: 20px;
+}
+fieldset div {
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+fieldset input:focus {
+  border-radius: 4px;
+  background-color: rgba(0, 149, 255, 0.1);
+}
+
+fieldset select:focus {
+  background-color: rgba(0, 149, 255, 0.1);
+}
+
+::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+}
