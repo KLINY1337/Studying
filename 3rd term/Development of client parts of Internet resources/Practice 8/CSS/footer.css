@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Assets/Fonts/Montserrat-Regular.ttf");
+}
+
+/* For presentation only, no need to copy the code below */
+
+.footer div {
+  background: #5b59fa;
+  position: relative;
+}
+
+.footer .logo p {
+  position: relative;
+  top: -30%;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 2vw;
+  display: inline-block;
+}
+
+.footer .logo * {
+  color: black;
+  position: relative;
+  top: 10%;
+  left: 35%;
+}
+
+.footer .copyright p {
+  color: black;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.link1 p {
+  color: black;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 100%;
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.link2 p {
+  color: black;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 100%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.link3 p {
+  color: black;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 100%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  background-color: #5b59fa;
+}
