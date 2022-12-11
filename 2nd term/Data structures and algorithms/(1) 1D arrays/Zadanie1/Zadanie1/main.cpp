@@ -43,7 +43,7 @@ int main()
 		cout << "¬ведите количество элементов в динамическом массиве: ";
 
 		cin >> len;
-
+		dynamic_mas = new int[len];
 		initialize_array(dynamic_mas, len);
 		cout_array(dynamic_mas, len);
 
@@ -177,6 +177,6 @@ int main()
 	case 0:
 		return 0;
 	}
-	
+
 	main();
 }
