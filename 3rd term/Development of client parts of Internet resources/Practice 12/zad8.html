@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assets/CSS/zad8.css" />
+    <link rel="stylesheet" href="/Assets/CSS/footer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <footer class="footer">
+        <div class="logo">
+          <img src="/Assets/Images/logo.png" alt="" width="140vw" />
+          <p>Blockchain-Technologies</p>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2022 Blockchain, Inc.</p>
+        </div>
+        <div class="link1">
+          <p>Legal Stuff</p>
+        </div>
+        <div class="link2">
+          <p>Privacy Policy</p>
+        </div>
+        <div class="link3">
+          <p>Security</p>
+        </div>
+      </footer>
+      <div class="header">
+        <h1>Our Company</h1>
+      </div>
+      <div class="navigation">
+        <button>About Us</button>
+        <button>Our Products</button>
+        <button id="btn" onclick="handleAccum('0')">Order</button>
+        <div class="counter"></div>
+      </div>
+      <div class="mainText">
+        <p>
+          <a href="https://habr.com/ru/post/448056/">Смарт-контракт</a> —
+          компьютерный алгоритм, предназначенный для заключения и поддержания
+          коммерческих контрактов в технологии блокчейн. Технология
+          смарт-контрактов предлагает программный способ описания
+          взаимоотношений и автоматических действий между сторонами. Одной из
+          особенностей смарт-контракта является его децентрализованная природа и
+          однозначная автоматическая исполняемость — единожды размещенный на
+          децентрализованной платформе, такой контракт будет существовать и
+          исполняться всегда (при наступлении соответствующих событий), пока
+          будет существовать такая платформа.
+        </p>
+        <button class="string" onclick="truncate(this, 7)">
+          very long string
+        </button>
+      </div>
+      <div class="asideLeft">
+        <img
+          src="Assets\Images\adaptive\1.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="asideRight">
+        <img
+          src="Assets\Images\adaptive\2.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="/Assets/js/korzina.js"></script>
+  <script src="/Assets/js/trunc.js"></script>
+  <script src="/Assets/js/changeLink.js"></script>
+</html>
