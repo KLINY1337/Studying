@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Assets/Fonts/Montserrat-Regular.ttf");
+}
+
+.MainContent {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0006a4;
+  border-radius: 40px 0px 40px 0px;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  display: table;
+  margin: 0 auto;
+}
+
+.Header {
+  font-family: "Miriam Libre", sans-serif;
+  margin-bottom: -0.5%;
+}
+
+.MainContent .ReadableBlock {
+  /*display: table;*/
+  margin: 0 auto;
+}
+.ReadContent {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+#LogoToIndex {
+  width: 5%;
+  height: 5%;
+}
+
+nav a {
+  box-shadow: inset 0px 0px 6px 0px #000000;
+  border: 4px solid #000000;
+  background-image: url("/Assets/Images/bg2.png");
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 6px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  background: transparent;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 6px 0px #000000;
+  transition: 0.25s;
+}
+
+nav a:active {
+  color: aqua;
+}
+.NavButton:visited {
+  color: blue;
+}
+
+#ad1 {
+  position: absolute;
+  margin-top: 74%;
+  margin-left: 5%;
+  display: inline-block;
+  font-size: 48px;
+  box-shadow: inset 0px 0px 6px 0px #000000;
+  border: 4px solid #000000;
+  background-image: url("/Assets/Images/bg2.png");
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+}
