@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="ico" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blockchain-Technologies</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" 
+      ><img id="LogoToIndex" src="Assets/Images/logo.png" alt="logo.png" width="5%" height="5%"
+    /></a>
+      <a class="Signup" href="signup.html">Sign Up</a>
+      <a class="Login" href="login.html">Log In</a>
+      
+      <div class="notif-and-ul">
+        <div class="notification-box">
+          <span class="notification-count">6</span>
+          <div class="notification-bell">
+            <span class="bell-top"></span>
+            <span class="bell-middle"></span>
+            <span class="bell-bottom"></span>
+            <span class="bell-rad"></span>
+          </div>
+        </div>
+        <ul class="menu2">
+          <li>Notification 1</li>
+          <li>Notification 2</li>
+          <li>Notification 3</li>
+          <li>Notification 4</li>
+          <li>Notification 5</li>
+          <li>Notification 6</li>
+        </ul>
+      </div>
+
+      <section class="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a href="1.html" class="NavButton">BLOCKCHAIN</a></li>
+          <li><a href="2.html" class="NavButton">CRYPTOCURRENCY</a></li>
+          <li><a href="3.html" class="NavButton">BANK SYSTEMS</a></li>
+          <li><a href="4.html" class="NavButton">STATE CONTROL</a></li>
+          <li><a href="5.html" class="NavButton">DIAMOND CERTIFICATION</a></li>
+          <li><a href="gallery.html" class="NavButton">PICTURES</a></li>
+        </ul>
+      </section>
+
+
+      <nav>
+        <a href="1.html" class="NavButton">BLOCKCHAIN</a>
+        <a href="2.html" class="NavButton">CRYPTOCURRENCY</a>
+        <a href="3.html" class="NavButton">BANK SYSTEMS</a>
+        <a href="4.html" class="NavButton">STATE CONTROL</a>
+        <a href="5.html" class="NavButton">DIAMOND CERTIFICATION</a>
+        <a href="gallery.html" class="NavButton">PICTURES</a>
+      </nav>
+    </header>
+    <main>
+      <aside id="navigation">
+      <h1 class="Header">Navigation:</h1>
+      <ol type="I" start="1">
+        
+        <li><a href="#0">Vocabulary</a></li>
+        <li><a href="#1">What Is Blockchain Technology?</a></li>
+        <ul type="disc">
+          <li><a href="#2">Blockchain Peculiar Properties</a></li>
+          <li>
+            <a href="#3"
+              >Why Blockchain Technologies Are So <br>Revolutionary And
+              Important?</a
+            >
+          </li>
+        </ul>
+        <li><a href="#4">How Does Blockchain Work?</a></li>
+        <ul type="disc">
+          <li><a href="#5">What is a Block?</a></li>
+          <li><a href="#6">What is a Miner in Blockchain?</a></li>
+          <li><a href="#7">What is Decentralization in Blockchain?</a></li>
+        </ul>
+        <li><a href="#8">Blockchain Applications</a></li>
+        <li><a href="#9">Cryptocurrency: Blockchain vs Cryptocurrency</a></li>
+        <ul type="disc">
+          <li><a href="#10">What is a Blockchain Platform?</a></li>
+        </ul>
+      </ol>
+    </aside>
+      <h1 id="0" class="Header">Vocabulary:</h1>
+      <dl>
+        <dt>
+          <b><u>Blockchain:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Blockchain is a type of Digital Ledger Technology (DLT) that
+            consists of growing list of records, called blocks, that are
+            securely linked together using cryptography.</i
+          >
+        </dd>
+        <dt>
+          <b><u>Digital Ledger:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Digital ledger (also called a shared ledger or distributed ledger
+            technology or DLT) is the consensus of replicated, shared, and
+            synchronized digital data that is geographically spread
+            (distributed) across many sites, countries, or institutions.</i
+          >
+        </dd>
+        <dt>
+          <b><u>Database:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Database is an organized collection of data stored and accessed
+            electronically.</i
+          >
+        </dd>
+        <dt>
+          <b
+            ><u><abbr title="Proof-of-Work">PoW</abbr></u></b
+          >
+        </dt>
+        <dd>
+          <i
+            >Proof of work is a form of cryptographic proof in which one party
+            (the prover) proves to others (the verifiers) that a certain amount
+            of a specific computational effort has been expended.</i
+          >
+        </dd>
+        <dt>
+          <b
+            ><u><abbr title="Non-fungible Token">NFT:</abbr></u></b
+          >
+        </dt>
+        <dd>
+          <i
+            >Non-fungible token is a record on a blockchain which is associated
+            with a particular digital or physical asset.</i
+          >
+        </dd>
+        <dd>
+          <i
+            >An NFT is a digital asset that can come in the form of art, music,
+            in-game items, videos, and more.</i
+          >
+        </dd>
+        <dt>
+          <b><u>Miner:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Miner is a user who selects a hash value that would fit
+            transactions in a block and allow obtaining a secret key.</i
+          >
+        </dd>
+        <dd>
+          <i
+            >Miners are users who validate new transactions and record them on
+            the global ledger.</i
+          >
+        </dd>
+        <dt>
+          <b><u>Bitcoin:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Bitcoin is a decentralized digital currency that can be transferred
+            on the peer-to-peer bitcoin network.</i
+          >
+        </dd>
+        <dt>
+          <b><u>Ethereum:</u></b>
+        </dt>
+        <dd>
+          <i
+            >Ethereum is a decentralized, open-source blockchain with smart
+            contract functionality.</i
+          >
+        </dd>
+      </dl>
+      <div class="MainContent">
+      <section class="ReadableBlock">
+        <h1 id="1" class="Header">What Is Blockchain Technology?</h1>
+        <pre>
+          <span class="ReadContent">
+<a href="https://www.blockchain.com/explorer" target="_blank">Blockchain</a>, sometimes referred to as <strong><em>distributed ledger technology (DLT)</em></strong>,
+makes the history of any digital asset unalterable and transparent through the
+use of a decentralized network and cryptographic hashing.
+        
+A simple analogy for how blockchain technology operates can be compared
+to how a Google Docs document works. When you create a Google Doc and share
+it with a group of people, the document is simply distributed instead of
+copied or transferred. This creates a decentralized distribution chain<img src="Assets/Images/Blockchain-Architecture.jpg" alt="Blockchain-Architecture" id="p1_picture">
+that gives everyone access to the base document at
+the same time. No one is locked out awaiting changes
+from another party, while all modifications to
+the document are being recorded in real-time, making
+changes completely transparent. A significant gap to
+note however is that unlike Google Docs, original
+content and data on the blockchain cannot be modified
+once written, adding to its level of security.</span></pre>
+      </section>
+      </div>
+      <div class="MainContent">
+      <section class="ReadableBlock">
+        <h2 id="2" class="Header">Blockchain Peculiar Properties:</h2>
+        <div class="ReadContent">
+        <ul>
+          <li>
+            <p>
+              A blockchain is a digital ledger or database where encrypted<br />
+              blocks of digital asset data are stored and chained together,<br />
+              forming a chronological single-source-of-truth for the data.
+            </p>
+          </li>
+          <li>
+            <p>Digital assets are distributed, not copied or transferred.</p>
+          </li>
+          <li>
+            <p>
+              Digital assets are decentralized, allowing for real-time
+              accessibility,<br />transparency and governance amongst more than
+              one party.
+            </p>
+          </li>
+          <li>
+            <p>
+              Blockchain ledgers are transparent — any changes made are<br />
+              documented, preserving integrity and trust.
+            </p>
+          </li>
+          <li>
+            <p>
+              Blockchain ledgers are public and constructed with inherent<br />
+              security measures, making it a prime technology<br />for almost
+              every sector.
+            </p>
+          </li>
+        </ul>
+      </div>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <p>
+          <abbr title="Co-founder Ethereum and Bitcoin Magazine"
+            ><i><b>Vitalik Buterin:</b></i></abbr
+          >
+        </p>
+        <blockquote>
+          <q
+            ><em
+              >Whereas most technologies tend to automate workers on the
+              periphery doing<br />
+              menial tasks, blockchains automate away the center. Instead of
+              putting the<br />
+              taxi driver out of a job, blockchain puts Uber out of a job and
+              lets the<br />
+              taxi drivers work with the customer directly.</em
+            ></q
+          >
+        </blockquote>
+        <a
+          href="https://www.forbes.com/sites/bernardmarr/2018/08/15/23-fascinating-bitcoin-and-blockchain-quotes-everyone-should-read/?sh=4b1bcf427e8a"
+          ><cite
+            ><b>www.forbes.com, 2019, February 27<sup>th</sup></b></cite
+          ></a
+        >
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h2 id="3" class="Header">
+          Why Blockchain Technologies Are So Revolutionary And Important?
+        </h2>
+
+        <pre>
+          <span class="ReadContent">
+Blockchain is an especially promising and revolutionary technology because
+it helps reduce security risks, stamp out fraud and bring transparency in a scalable way. 
+
+Popularized by its association with cryptocurrency and NFTs, blockchain technology
+has since evolved to become a management solution for all types of global industries.
+Today, you can find blockchain technology providing transparency for the food
+supply chain, securing healthcare data, innovating gaming and overall changing
+how we handle data and ownership on a large scale.
+          </span>
+      </pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h1 id="4" class="Header">How Does Blockchain Work?</h1>
+
+        <pre>
+          <span class="ReadContent">
+For proof-of-work blockchains, this technologyconsists of three
+important concepts: blocks, nodes and miners.
+</span>
+</pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h3 id="5" class="Header">What is a Block?</h3>
+
+        <pre>
+          <span class="ReadContent">
+Every chain consists of multiple blocks and each block has three basic elements:
+</span>
+ </pre>
+        <span class="ReadContent">
+          <ul>
+            <li>The data in the block.</li>
+            <li>
+              The nonce — “number used only once.” A nonce in blockchain is a
+              <br />
+              whole number that’s randomly generated when a block is created,<br />
+              which then generates a block header hash.
+            </li>
+            <li>
+              The hash — a hash in blockchain is a number permanently attached
+              to<br />
+              the nonce. For Bitcoin hashes, these values must start with a
+              huge<br />
+              number of zeroes (i.e., be extremely small).
+            </li>
+          </ul>
+        </span>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <span class="ReadContent">
+          <pre>
+When the first block of a chain is created, a nonce generates the
+cryptographic hash. The data in the block is considered signed and
+forever tied to the nonce and hash unless it is mined.</pre
+          >
+        </span>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h3 id="6" class="Header">What is a Miner in Blockchain?</h3>
+
+        <pre>
+          <span class="ReadContent">
+Miners create new blocks on the chain through a process called mining.
+
+In a blockchain every block has its own unique nonce and hash, but also
+references the hash of the previous block in the chain, so mining a block
+isn't easy, especially on large chains.
+      
+Miners use special software to solve the incredibly complex math problem
+of finding a nonce that generates an accepted hash. Because the nonce is
+only 32 bits and the hash is 256, there are roughly four billion possible
+nonce-hash combinations that must be mined before the right one is found.
+When that happens miners are said to have found the "golden nonce"
+and their block is added to the chain. 
+      
+Making a change to any block earlier in the chain requires re-mining not
+just the block with the change, but all of the blocks that come after.
+This is why it's extremely difficult to manipulate blockchain technology.
+Think of it as "safety in math" since finding golden nonces requires
+an enormous amount of time and computing power.
+      
+When a block is successfully mined, the change is accepted by all of
+the nodes on the network and the miner is rewarded financially.
+</span>
+</pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+
+        <h3 id="7" class="Header">What is Decentralization in Blockchain?</h3>
+
+        <pre>
+<span class="ReadContent">
+One of the most important concepts in blockchain technology is
+decentralization. No one computer or organization can own the
+chain. Instead, it is a distributed ledger via the nodes connected
+to the chain. Blockchain nodes can be any kind of electronic device
+that maintains copies of the chain and keeps the network functioning. 
+
+Every node has its own copy of the blockchain and the network must
+algorithmically approve any newly mined block for the chain to be
+updated, trusted and verified. Since blockchains are transparent,
+every action in the ledger can be easily checked and viewed, creating
+inherent blockchain security. Each participant is given a unique
+alphanumeric identification number that shows their transactions.
+      
+Combining public information with a system of checks-and-balances
+helps the blockchain maintain integrity and creates trust among users.
+Essentially, blockchains can be thought of as the scalability of
+trust via technology.
+</span>
+          </pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h5 class="Header">HOW BLOCKCHAIN WORKS</h5>
+        <ul>
+          <li>
+            The blockchain is a digital database, composed of encrypted blocks
+            of<br />
+            data which are “chained” together and secured by complex math
+            problems
+          </li>
+          <li>
+            The math problems involving matching nonces and hashes is almost<br />
+            impossible to change later — the record of previous actions on
+            the<br />
+            blockchain is highly accurate and secure from manipulation
+          </li>
+          <li>
+            The blockchain is distributed identically across different<br />
+            decentralized nodes, ensuring no one organization can own or
+            <br />manipulate it
+          </li>
+        </ul>
+      </section class="ReadableBlock">
+    </div>
+   <div class="vid">
+      <video id="video1" width="80%" height="60%" src="Assets/Videos/parkour.mp4" controls="controls" poster="Assets/Images/Blockchain_use_case.png" preload="auto"></video>
+      <div class="overlay"><span>VIDEO TITLE</span></div>
+    </div>
+<div class="MainContent">
+      <section class="ReadableBlock">
+        <h1 id="8" class="Header">Blockchain Applications</h1>
+        <pre>
+          <span class="ReadContent">
+Blockchain isn’t only used for financial transactions. Due to its secure
+and transparent nature, the technology is versatile to needs beyond one
+area of expertise. Industries covering energy, logistics, education and
+more are utilizing the benefits of blockchain every day. 
+</span>
+    </pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h5>TOP BLOCKCHAIN USES AND APPLICATIONS</h5>
+        <ul>
+          <li>Cryptocurrency</li>
+          <li>Cybersecurity</li>
+          <li>Accounting and record keeping</li>
+          <li>Supply chain</li>
+          <li>healthcare</li>
+        </ul>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h1 id="9" class="Header">
+          Cryptocurrency: Blockchain vs Cryptocurrency
+        </h1>
+
+        <pre>
+          <span class="ReadContent">
+Blockchain’s most well-known use (and maybe most controversial) is 
+in cryptocurrencies. Cryptocurrencies are digital currencies (or tokens),
+like Bitcoin, Ethereum or Litecoin, that can be used to buy goods and
+services. Just like a digital form of cash, crypto can be used to buy
+everything from your lunch to your next home. Unlike cash, crypto uses
+blockchain to act as both a public ledger and an enhanced cryptographic
+security system, so online transactions are always recorded and secured.
+
+The term Bitcoin, for example, is used interchangeably to refer to both
+the blockchain and the cryptocurrency, but they remain as two separate
+entities. The very first blockchain application appeared in 2009 as Bitcoin,
+a crypto system using the distributed ledger technology. This also marked
+Bitcoin as the first “blockchain.” The aspect of blockchain being used to
+house this new digital currency is what brought both entities into
+association, and what led them quickly into the spotlight. The Bitcoin
+blockchain describes only the technology in which the currency is housed,
+while the Bitcoin cryptocurrency describes only the currency itself.
+</span></pre>
+      </section class="ReadableBlock">
+      <article>
+        <pre>
+          <span class="ReadContent">
+      To date, there are more than 20,000 cryptocurrencies in the world that have
+      a total market cap around $1 trillion, with Bitcoin holding a majority of
+      the value. These tokens have become incredibly popular over the last few
+      years, with the value of one Bitcoin fluctuating between several thousands
+      of dollars. 
+      
+      Here are some of the main reasons behind cryptocurrency’s recent popularity:
+    </span></pre>
+        <span class="ReadContent">
+          <ul>
+            <li>
+              Blockchain’s security makes theft much harder since each<br />cryptocurrency
+              has its own irrefutable identifiable number that is<br />attached
+              to one owner.
+            </li>
+            <li>
+              Crypto reduces the need for individualized currencies and
+              central<br />
+              banks. With blockchain, crypto can be sent to anywhere and anyone
+              in<br />
+              the world without the need for currency exchanging or without
+              interference<br />
+              from central banks.
+            </li>
+            <li>
+              Cryptocurrencies can make some people rich. Speculators have been
+              driving<br />
+              up the price of crypto, especially Bitcoin, helping some early
+              adopters to<br />
+              become billionaires. Whether this is actually a positive has yet
+              to be seen,<br />
+              as some retractors believe that speculators do not have the
+              long-term benefits<br />
+              of crypto in mind.
+            </li>
+            <li>
+              More and more large corporations came around to the idea of a
+              blockchain-based<br />
+              digital currency for payments. In February 2021, Tesla announced
+              that it would<br />
+              invest $1.5 billion into Bitcoin and accept it as payment for
+              their cars.
+            </li>
+          </ul>
+        </span>
+      </article>
+      <section class="ReadableBlock">
+        <pre>
+          <span class="ReadContent">
+      Of course, there are many legitimate arguments against blockchain-based
+      digital currencies. First, crypto isn’t a very regulated market. Many
+      governments were quick to jump into crypto, but few have a staunch set of
+      codified laws regarding it. Additionally, crypto is incredibly volatile due
+      to speculators. Lack of stability has caused some people to get very rich,
+      while a majority have still lost thousands of dollars. 
+      
+      Whether or not digital currencies are the future remains to be seen. For
+      now, it seems as if blockchain’s meteoric rise is more starting to take
+      root in reality than pure hype. Though it’s still making headway in this
+      entirely-new, highly-exploratory field, blockchain is also showing
+      promise beyond Bitcoin.
+    </span>
+    </pre>
+      </section class="ReadableBlock">
+      <section class="ReadableBlock">
+        <h2 id="10" class="Header">What is a Blockchain Platform?</h2>
+        <pre>
+          <span class="ReadContent">
+While a blockchain network describes the distributed ledger infrastructure, a
+blockchain platform describes a medium where users can interact with a blockchain
+and its network. Blockchain platforms are created to be scalable and act as
+extensions from an existing blockchain infrastructure, allowing information
+exchange and services to be powered directly from this framework. 
+
+An example of a blockchain platform includes Ethereum, a software platform which
+houses the Etherium, or ether, cryptocurrency. With the Ethereum platform, users
+can also create programmable tokens and smart contracts which are built directly
+upon the Ethereum blockchain infrastructure.</span>
+</pre>
+      </section class="ReadableBlock">
+    </div>
+    </main>
+    <div class="Form">
+      <form action="" method="get">
+        <fieldset>
+          <legend>Found an error? Let us know!</legend>
+        <div id="name">
+        <label for="name">Your name: </label><br>
+        <input class="input" type="text" name="name" placeholder="Type your name">
+        </div>
+        <div id="email">
+        <label for="email">E-mail: </label><br>
+        <input class="input" type="email" name="email" pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;" placeholder="Type your E-mail" required>
+        <p><br>Receive a reply on E-mail?</p>
+      
+        <input type="radio" name="reply" required>
+        <label for="reply">Yes</label>
+<br>
+        
+        <input type="radio" name="reply" checked>
+        <label for="reply">No</label>
+      </div>
+     
+      
+      <div id="problemtype">
+        <p>Type of problem:</p>
+        
+        <input type="checkbox" name="wrongtext">
+        <label for="wrongtext">Wrong information</label>
+        <br>
+        <input type="checkbox" name="citeerror">
+        <label for="citeerror">Cite block doesn't work</label>
+        
+      </div>
+      <div id="screen">
+        <label for="screen">Screenshot of problem: </label><br>
+        <input type="file" name="screen" >
+      </div>
+      <div>
+        
+      </div>
+      <div id="description">
+        <label for="comment">Describe the Problem: </label><br>
+        <textarea name="comment" cols="60" rows="6" minlength="0" maxlength="600" placeholder="Describe the problem in more detail" required></textarea>
+      </div>
+      <div>
+        <button id="submitButton" type="submit">Send report</button>
+      </div>
+      </fieldset>
+        
+
+      </form>
+    </div>
+    <footer>
+      <h4>Contacts</h4>
+      <address>
+        <p><a href="tel:+74951234567">+7-495-123-45-67</a></p>
+      </address>
+      <address>
+        <p><a href="mailto:mailto@mail.ru">mailto@mail.ru</a></p>
+      </address>
+    </footer>
+    <hr />
+    <h4>Using of sub html tag</h4>
+    <p>H<sub>2</sub>O+CO<sub>2</sub>=>H<sub>2</sub>CO<sub>3</sub></p>
+    <hr />
+    <h4>Using of datetime-local</h4>
+    <form action="">
+      <legend>Time of arrival at the hotel</legend>
+      <input type="datetime-local" name="date" min="2022-03-10">
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
