@@ -1,0 +1,7 @@
+#img1-div,
+#img2-div,
+#img3-div,
+#img4-div,
+#img5-div {
+  display: inline-block;
+}
