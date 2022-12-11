@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/CSS/signup.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="signup-form-container">
+      <form action="" method="post">
+        <fieldset>
+          <legend>Sign Up Form</legend>
+          <div class="signup-form">
+            <div>
+              <label for="phoneNumber">Phone Number: </label>
+              <br />
+              <input
+                type="tel"
+                name="phoneNumber"
+                pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/"
+                placeholder="Type your phone number"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">E-mail: </label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i"
+                placeholder="Type your E-mail"
+                required
+              />
+            </div>
+            <div>
+              <label for="password">Password: </label>
+              <br />
+              <input
+                type="password"
+                name="password"
+                minlength="5"
+                maxlength="20"
+                placeholder="Type your password"
+                required
+              />
+            </div>
+            <div>
+              Pick your region: <br />
+              <select id="" size="1">
+                <option disabled>Your Region</option>
+                <option value="">Россия</option>
+                <option value="">ENGLAND</option>
+                <option value="">中国</option>
+              </select>
+            </div>
+            <div id="submitbutton">
+              <button type="submit">Sign Up</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="SMM">
+      <div class="button-box">
+        <a href="" class="btn"
+          ><img
+            src="/Assets/Images/FBlogo.png"
+            alt=""
+            width="60px"
+            height="56px"
+        /></a>
+      </div>
+      <div class="button-box">
+        <a href="" class="btn"
+          ><img
+            src="/Assets/Images/instlogo.png"
+            alt=""
+            width="60px"
+            height="56px"
+        /></a>
+      </div>
+      <div class="button-box">
+        <a href="" class="btn"
+          ><img
+            src="/Assets/Images/tglogo.png"
+            alt=""
+            width="60px"
+            height="56px"
+        /></a>
+      </div>
+      <div class="button-box">
+        <a href="" class="btn"
+          ><img
+            src="/Assets/Images/vklogo.png"
+            alt=""
+            width="60px"
+            height="56px"
+        /></a>
+      </div>
+      <div class="button-box">
+        <a href="" class="btn"
+          ><img
+            src="/Assets/Images/snaplogo.png"
+            alt=""
+            width="60px"
+            height="56px"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

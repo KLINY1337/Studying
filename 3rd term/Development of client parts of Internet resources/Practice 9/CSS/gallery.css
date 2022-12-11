@@ -1,0 +1,158 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  margin: 20px auto;
+}
+.Header {
+  text-align: center;
+}
+.image-gallery {
+  
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.image-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-item img {
+  object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
+  }
+}
+
+.img-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  /* center overlay content 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-item:hover .overlay {
+  transform: scale(1);
+}
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture1 picture1 picture1 picture1 picture1 picture2 picture2 picture2 picture2 picture3 picture3 picture3"
+    "picture1 picture1 picture1 picture1 picture1 picture2 picture2 picture2 picture2 picture3 picture3 picture3"
+    "picture5 picture5 picture6 picture6 picture6 picture2 picture2 picture2 picture2 picture4 picture4 picture4"
+    "picture5 picture5 picture6 picture6 picture6 picture2 picture2 picture2 picture2 picture4 picture4 picture4"
+    "picture5 picture5 picture6 picture6 picture6 picture2 picture2 picture2 picture2 picture4 picture4 picture4"
+    "picture5 picture5 picture6 picture6 picture6 picture7 picture7 picture7 picture7 picture7 picture7 picture7"
+    "picture5 picture5 picture8 picture8 picture8 picture7 picture7 picture7 picture7 picture7 picture7 picture7"
+    "picture5 picture5 picture8 picture8 picture8 picture7 picture7 picture7 picture7 picture7 picture7 picture7"
+    "picture5 picture5 picture8 picture8 picture8 picture7 picture7 picture7 picture7 picture7 picture7 picture7";
+}
+
+.picture1 {
+  grid-area: picture1;
+}
+
+.picture2 {
+  grid-area: picture2;
+}
+
+.picture3 {
+  grid-area: picture3;
+}
+
+.picture4 {
+  grid-area: picture4;
+}
+
+.picture5 {
+  grid-area: picture5;
+}
+
+.picture6 {
+  grid-area: picture6;
+}
+
+.picture7 {
+  grid-area: picture7;
+}
+
+.picture8 {
+  grid-area: picture8;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0;
+}
+.container div {
+  border-radius: 5px;
+  position: relative;
+  margin: 5px;
+}
+.container div img {
+  border-radius: 5px;
+}
+
+.container *::after {
+  content: "description";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.5);
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container *:hover::after {
+  transform: scale(1);
+}
